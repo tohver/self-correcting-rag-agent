@@ -132,7 +132,7 @@ embedding.
 
 ```bash
 git clone <repository-url>
-cd multi-agent-RAG-game-industry
+cd self-correcting-rag-agent
 
 # with uv (recommended)
 uv venv
