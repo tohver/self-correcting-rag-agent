@@ -1,7 +1,11 @@
 # Research Agent
 
-A retrieval-augmented research agent for the video game industry, built as an explicit
-state machine.
+A Corrective RAG (CRAG) research agent for the video game industry, built as an explicit
+state machine: a judge model checks every retrieval before it is trusted, and the agent
+falls back to its cache and then the web when the local collection cannot answer.
+
+It is a single agent with three LLM roles (the answer writer, the retrieval judge and,
+during evaluation only, the answer grader), not a system of cooperating agents.
 
 ---
 
@@ -128,7 +132,7 @@ embedding.
 
 ```bash
 git clone <repository-url>
-cd multi-agent-RAG-games
+cd multi-agent-RAG-game-industry
 
 # with uv (recommended)
 uv venv

@@ -5,10 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "research-agent"
 version = "1.0.0"
-description = "A retrieval-augmented research agent for the video game industry, built as an explicit state machine."
+description = "A Corrective RAG research agent for the video game industry, built as an explicit state machine."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 dependencies = [
     "chromadb>=0.5",
     "openai>=1.40",
